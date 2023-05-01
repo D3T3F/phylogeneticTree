@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'styl.css' %}" />
+{% endblock %} 
+
+{% block title %}Not Found!{% endblock %} 
+
+{% block body%}
+
+<main>
+    <h1>Error 404! {{name}} Specie not found in our data base!</h1>
+</main>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="{% static 'global.js' %}" type="module"></script>
+{% endblock %}

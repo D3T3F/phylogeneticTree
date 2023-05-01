@@ -1,0 +1,21 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'styl.css' %}" />
+{% endblock %} 
+
+{% block title %}{{name}} Specie{% endblock %} 
+
+{% block body%}
+
+<main>
+    <div class="specie-text">
+        <h1>{{name}} Specie</h1>
+        <p>{{description}}</p>
+    </div>
+</main>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="{% static 'global.js' %}" type="module"></script>
+{% endblock %}

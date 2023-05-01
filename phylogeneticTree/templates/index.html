@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'styl.css' %}" />
+{% endblock %} 
+
+{% block body%}
+
+<main><svg class="tree-container" width="100%" ></svg></main>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="{% static 'tree_script.js' %}" type="module"></script>
+{% endblock %}

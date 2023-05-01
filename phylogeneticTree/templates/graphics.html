@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+{%load static %} 
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'styl.css' %}" />
+{% endblock %}
+
+{% block title %}Data Base Graphics{% endblock %} 
+
+{% block body %}
+<main>
+  <div class="chart"><canvas id="myChart"></canvas></div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{% static 'graphics_script.js' %}" type="module"></script>
+{% endblock %}
