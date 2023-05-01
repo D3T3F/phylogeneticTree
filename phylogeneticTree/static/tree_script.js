@@ -1,7 +1,7 @@
 import { object_species } from "./global.js";
 
 function calculateX(d) {
-  const scaleFactor = window.innerWidth / 1200;
+  const scaleFactor = window.innerWidth / 2000;
   return (d.parent?.y ?? 0) + d.y * d.data.length * scaleFactor;
 }
 
